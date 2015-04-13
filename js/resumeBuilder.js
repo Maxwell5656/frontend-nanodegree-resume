@@ -47,11 +47,11 @@ bio.display();
 var work = {
 	"jobs" : [
 		{
-			"title" : "unemployed",
-			"employer" : "n/a",
-			"dates" : "n/a",
-			"location" : "Huntsville, AL, USA",
-			"description" : "n/a"
+			"title" : "Toilet Cleaner",
+			"employer" : "Area 51",
+			"dates" : "2010-2014",
+			"location" : "Groom Lake, NV",
+			"description" : "**CLASSIFIED**"
 		}
 	],
 	display: function() {
@@ -63,9 +63,9 @@ var work = {
 			$(".work-entry:last").append(formattedEmployerandTitle);
 			var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 			$(".work-entry:last").append(formattedDates);
-			var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].dates);
+			var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
 			$(".work-entry:last").append(formattedLocation)
-			var formattedDescription =HTMLworkDescription.replace("%data%", work.jobs[job].dates);
+			var formattedDescription =HTMLworkDescription.replace("%data%", work.jobs[job].description);
 			$(".work-entry:last").append(formattedDescription);
 		}
 	}
